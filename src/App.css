@@ -1,0 +1,339 @@
+
+body{
+  font-family: "Montserrat", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.add_btn{
+  position: fixed;
+  right: 2%;
+  top: 5%;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  color: green;
+}
+.montserrat-300 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.montserrat-400 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-600 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.side-nav{
+  height: 100vh;
+  background-color:white;
+  position: fixed;
+  left: 0;
+  display: block;
+  transition: width 0.3s; /* smooth transition */
+  overflow: hidden;
+  width:215px; /* initial width when collapsed */
+  border-right: 1px solid #e4dddd;
+
+  
+}
+.sn1section{
+  width: 100%;
+  height: 25%;
+
+}
+/* .side-nav:hover {
+  width: 15.6667%;} /* expanded width on hover equivalent to col-2  */
+
+.side-nav .logo {
+  width: 100%; /* ensure the logo fits the sidebar width */
+  margin-bottom: 20px;
+}
+
+.side-nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.side-nav li {
+  padding: 15px 10px;
+  white-space: nowrap; /* prevent text wrapping */
+}
+
+.side-nav li:hover {
+  background-color: #f4f4f4;
+  /* background-color: #a10909;  */
+  /* optional: add hover effect for list items */
+}
+
+.side-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-family: system-ui;
+}
+
+.side-nav a .icon {
+  margin-right: 10px; /* space between icon and text */
+}
+.logo{
+  width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3 / 1.7;
+}
+.logo-sm{
+  width: 50%;
+    object-fit: contain;
+    aspect-ratio: 3 / 1.7;
+}
+
+.dishimg{
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 3/3;
+  height: 100%;
+}
+.avatar{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: aquamarine;
+  object-fit: cover;
+}
+
+.item-text{
+  font-size: medium;
+  width: -webkit-fill-available;
+}
+.banner-1{
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.banner-2{
+  /* background-image: url('./components/Images/banner\ 6.jpg'); */
+  background-size: cover;
+  height: 28rem;
+}
+.explore-btn{
+  width:30%; 
+  border-radius:10px;
+  background-color: #f2c0f8d3;
+  border: 1px solid rgb(181 29 113 / 23%);
+  padding:10px;
+  color:black;
+  font-weight: bold;
+  font-style: normal;
+  
+}
+.footer-logo{
+  width: 30%;
+  object-fit: cover;
+}
+
+.smallnav{
+  display: none;
+}
+.main-contenet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+}
+.main-row{
+  margin-bottom: 0px;
+}
+.item_div{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d88ee030;
+    border-radius: 32px;
+    border: 1px solid rgb(181 29 113 / 23%);
+}
+.avtar{
+  width: 20%;
+}
+.contents_items{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icons_items{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0px;
+}
+@media only screen and (max-width: 992px) {
+  .smallnav{
+    display: block;
+  }
+  .side-nav{
+    display: none;
+  }
+ 
+  .add_btn{
+    right: 2%;
+    top: unset;
+    bottom: 1%;
+  }
+  .main-row{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  body{
+   
+    background: rgb(255, 255, 255);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .avtar{
+    width: 33.3%;
+    height: 120px;
+  }
+  .contents_items{
+    width: 33.3%;
+    display: grid;
+    
+  }
+  .icons_items{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: none;
+    object-fit: cover;
+  }
+}
+
+.p2{
+  /* background-image: url('./components/Images/b1.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+}
+
+.container1 {
+  position: relative;}
+  
+  .whole{
+    margin-left: 16rem;
+  }
+
+.side-nav:hover .whole {
+  margin-left: 10px; /* reset content margin */
+  transition: margin-left 0.3s ease;
+}
+.active{
+  background-color: rgb(8, 8, 8);
+}
+/* Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#ededed;
+}
+
+.login-card {
+  /* background-image: url("./components/Images/bg-2.jpg"); */
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.login-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: rgb(56, 55, 55);
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  width: 130rem; /* adjust the width as needed */
+
+}
+
+.table {
+  min-width: 100%;
+  width: 75rem; /* adjust the width as needed */
+
+
+
+}
+
+.input-style{
+  padding: 9px;
+  border: 1px solid #d4d1d1;
+}
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+
